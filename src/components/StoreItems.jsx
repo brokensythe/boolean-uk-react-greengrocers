@@ -1,3 +1,5 @@
+import Button from "./Button"
+
 function StoreItem({item, cart, setCart}) {
     function addToCart(e) {
       const newItem = {
@@ -23,7 +25,7 @@ function StoreItem({item, cart, setCart}) {
       <div className="store--item-icon">
         <img src={`assets/icons/${item.id}.svg`} alt={item.name} />
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+      <Button onClick={addToCart}>Add to cart</Button>
     </li>
 }
 

@@ -1,8 +1,9 @@
-import StoreItem from "./StoreItems"
+import StoreItem from "./StoreItems.jsx"
+import Title from "./Title.jsx"
 
 function Store({store, setStore, cart, setCart}) {
     return <header id="store">
-    <h1>Greengrocers</h1>
+    <Title>Greengrocers</Title>
     <ul className="item-list store--item-list">
       {store.map(function (item) {
       return <StoreItem key={item.id} item={item} cart={cart} setCart={setCart} />
